@@ -18,10 +18,11 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding: 120px;
 }
 
 .content-items {
-  width: 500px;
+  width: 100%;
 }
 
 .form-input {
@@ -102,4 +103,16 @@ footer {
   position: absolute;
   bottom: 0;
   padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 90px;
+  }
 }
