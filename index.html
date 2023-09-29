@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="content-wrapper">
+        <section class="content-items">
+          <h1 class="title">Check Your BMI</h1>
+          <p>Enter your weight and height bellow to check your BMI result</p>
+          <form id="form" method="post" action="">
+            <div class="form-input">
+              <label for="weight">Put your weight here (KG)</label>
+              <input type="number" id="weight" required />
+            </div>
+            <div class="form-input">
+              <label for="height">Put your height here (CM)</label>
+              <input type="number" id="height" required />
+            </div>
+            <div class="form-submit">
+              <button type="submit" id="submit-form">Calculate BMI</button>
+            </div>
+          </form>
+        </section>
+        <section class="content-items">
+          <p>Result</p>
+          <textarea id="result" readonly></textarea>
+          <div class="button-result">
+            <button id="btn-clear" type="submit">clear</button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>
+          &lt;/&gt; by
+          <a href="https://www.linkedin.com/in/gusjabungaf/" target="_blank"
+            >Al Fiansyah</a
+          >
+          | Contribute at
+          <a href="https://github.com/alfianvx" target="_blank">Github</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
